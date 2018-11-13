@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button (click)="takepicture()" full color="primary"><ion-icon name="camera" class="icon_margin"></ion-icon>  Take Camera Photo</button>
+   <button ion-button (click)="getpicture()" full color="danger">   <ion-icon name="images" class="icon_margin"></ion-icon>  Get Photo From Gallery</button> 
+
+  <h4 align="center">User Profile Picture</h4>
+  <p align="center"> <img src="{{image}}">  </p>
+</ion-content>
